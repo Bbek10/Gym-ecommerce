@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment"
+
+
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:orientation="vertical"
+                android:background="@drawable/background">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textSize="30sp"
+                    android:text="Welcome To Bro Sports"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_margin="5dp"
+                    android:text="Your all in one destination for Gym and Sports"/>
+
+
+
+            </LinearLayout>
+            <SearchView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="17dp"
+
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/search_bg"
+                android:closeIcon="@drawable/cancel_button"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search..."
+                android:searchHintIcon="@null"
+                android:searchIcon="@drawable/search_button" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Search by category"/>
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/categoryRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                tools:listitem="@layout/layout_category_item"
+
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Our Products"/>
+            </RelativeLayout>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/productRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:nestedScrollingEnabled="true"
+                tools:listitem="@layout/layout_product_item"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

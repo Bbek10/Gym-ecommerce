@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "831811586386",
+    "project_id": "brosports-85bde",
+    "storage_bucket": "brosports-85bde.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831811586386:android:e27770150a59c32bb5528b",
+        "android_client_info": {
+          "package_name": "com.example.brosports"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831811586386-lb6g7au4lrcjkuncl06ho8m1c19bbsrd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaRIC1j5BQZN3CRhduYpTkyX2flaEMPm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831811586386-lb6g7au4lrcjkuncl06ho8m1c19bbsrd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

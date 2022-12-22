@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardElevation="3dp"
+    app:cardCornerRadius="50dp"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars"
+            android:contentDescription="TODO" />
+
+
+        <TextView
+            android:id="@+id/productTitle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/productPrice"
+
+            app:layout_constraintEnd_toStartOf="@+id/cancelBtn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/productImage"
+            app:layout_constraintTop_toTopOf="@+id/productImage"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="224dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="23dp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/cancelBtn"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/productImage"
+            app:layout_constraintTop_toTopOf="@+id/cancelBtn" />
+
+        <ImageView
+            android:id="@+id/cancelBtn"
+            android:layout_width="59dp"
+            android:layout_height="58dp"
+            android:layout_margin="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.464"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+        <ImageView
+            android:id="@+id/increment"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_marginEnd="156dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productTitle"
+
+            app:srcCompat="@drawable/pluss" />
+
+        <ImageView
+            android:id="@+id/decrement"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/increment"
+
+            app:layout_constraintStart_toEndOf="@+id/productImage"
+            app:layout_constraintTop_toBottomOf="@+id/productTitle"
+            app:srcCompat="@drawable/minus" />
+
+        <TextView
+            android:id="@+id/productOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/decrement"
+            app:layout_constraintEnd_toStartOf="@+id/increment"
+            app:layout_constraintStart_toEndOf="@+id/decrement"
+            app:layout_constraintTop_toTopOf="@+id/decrement" />
+
+        <TextView
+            android:id="@+id/pound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="£"
+            android:textColor="#ff3d00"
+            app:layout_constraintBottom_toBottomOf="@+id/productPrice"
+            app:layout_constraintEnd_toStartOf="@+id/productPrice"
+            app:layout_constraintTop_toTopOf="@+id/productPrice"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/productStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock"
+            android:textSize="12sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/productTitle"
+            app:layout_constraintHorizontal_bias="0.294"
+            app:layout_constraintStart_toEndOf="@+id/increment"
+            app:layout_constraintTop_toTopOf="@+id/productTitle"
+            app:layout_constraintVertical_bias="0.681" />
+
+        <TextView
+            android:id="@+id/stockRem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:textSize="12sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/productTitle"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toEndOf="@+id/increment"
+            app:layout_constraintTop_toTopOf="@+id/productTitle"
+            app:layout_constraintVertical_bias="0.927" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
